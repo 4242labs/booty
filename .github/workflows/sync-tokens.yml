@@ -31,14 +31,14 @@ jobs:
       - name: Fetch canonical tokens from ds.42labs.io
         run: |
           set -euo pipefail
-          BASE="https://ds.42labs.io"
+          BASE="https://42labs-io-ds.vercel.app"  # Vercel-direct: ds.42labs.io is Cloudflare-fronted and 403s datacenter/CI IPs
           mkdir -p tokens
-          curl -fsSL "$BASE/tokens.latest.json" -o tokens/tokens.latest.json
+          curl -fsS --retry 3 --retry-delay 5 --retry-all-errors "$BASE/tokens.latest.json" -o tokens/tokens.latest.json
           VER=$(python3 -c 'import json;print(json.load(open("tokens/tokens.latest.json"))["$metadata"]["version"])')
           echo "canonical version: $VER"
           for ext in json css schema.json; do
-            curl -fsSL "$BASE/tokens.latest.$ext"  -o "tokens/tokens.latest.$ext"
-            curl -fsSL "$BASE/tokens.v$VER.$ext"    -o "tokens/tokens.v$VER.$ext"
+            curl -fsS --retry 3 --retry-delay 5 --retry-all-errors "$BASE/tokens.latest.$ext"  -o "tokens/tokens.latest.$ext"
+            curl -fsS --retry 3 --retry-delay 5 --retry-all-errors "$BASE/tokens.v$VER.$ext"    -o "tokens/tokens.v$VER.$ext"
           done
       - name: Commit if changed
         run: |
