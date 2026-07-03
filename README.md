@@ -23,5 +23,3 @@ Zed: drop `themes/zed/42labs.json` into `~/.config/zed/themes/`.
 
 Linear: copy a string from `themes/linear/42labs-linear.md` → Settings → Preferences → Theme → Custom.
 
----
-A [42labs](https://42labs.io) project.
