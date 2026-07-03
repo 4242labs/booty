@@ -1,0 +1,53 @@
+name: sync-tokens
+
+# Booty is the canonical PUBLISHED mirror of the 42labs Design System tokens.
+# The tokens are generated in 4242labs/design-system (from globals.css) and
+# served at https://ds.42labs.io/tokens.*. This job pulls those canonical
+# artifacts and commits any change here.
+#
+# Zero cross-repo secrets: it fetches the PUBLIC ds.42labs.io endpoint and
+# commits with the repo's own GITHUB_TOKEN. Runs daily, on manual dispatch,
+# or on a `tokens-updated` repository_dispatch (wire the DS side to fire this
+# for near-instant sync when a token PAT is available).
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch: {}
+  repository_dispatch:
+    types: [tokens-updated]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-tokens
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch canonical tokens from ds.42labs.io
+        run: |
+          set -euo pipefail
+          BASE="https://ds.42labs.io"
+          mkdir -p tokens
+          curl -fsSL "$BASE/tokens.latest.json" -o tokens/tokens.latest.json
+          VER=$(python3 -c 'import json;print(json.load(open("tokens/tokens.latest.json"))["$metadata"]["version"])')
+          echo "canonical version: $VER"
+          for ext in json css schema.json; do
+            curl -fsSL "$BASE/tokens.latest.$ext"  -o "tokens/tokens.latest.$ext"
+            curl -fsSL "$BASE/tokens.v$VER.$ext"    -o "tokens/tokens.v$VER.$ext"
+          done
+      - name: Commit if changed
+        run: |
+          set -euo pipefail
+          if [ -z "$(git status --porcelain tokens)" ]; then
+            echo "tokens already in sync"; exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tokens
+          git commit -m "chore(tokens): sync canonical tokens from ds.42labs.io"
+          git push
