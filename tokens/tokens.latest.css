@@ -1,0 +1,141 @@
+/*
+ * 42labs Design System — tokens.css (auto-generated; DO NOT EDIT).
+ * Version 0.3.0 · commit da60739 · source-touched 2026-06-27T20:54:11-03:00
+ * Source: https://github.com/42piratas/42labs.ds/blob/da60739/src/app/globals.css
+ * Contains layers 1-3 of globals.css (raw palette + semantic + scale).
+ * Layer 4 (@theme inline Tailwind bridge) and layer 5 (layout primitives) are NOT included.
+ */
+
+:root {
+  --canvas-warm: #FDFAF5;
+  --canvas-cool: #FFFFFF;
+  --cream: #FEF3E2;
+  --muted-cool: #F5F5F4;
+  --linen: #E8E3DD;
+  --border-cool: #E7E5E4;
+  --mid-stone: #B8AFA8;
+  --stone: #756D68;
+  --graphite: #433E3A;
+  --charcoal: #1C1917;
+  --copper-soft: #FDECD8;
+  --copper-border: #F5C9A1;
+  --copper-focus: #F59342;
+  --copper-light: #E8853A;
+  --copper: #E2711D;
+  --copper-dark: #CC5D0A;
+  --copper-ink: #B45309;
+  --copper-ink-dark: #92400E;
+  --sky: #EFF6FF;
+  --blue-border: #BFDBFE;
+  --blue: #3B82F6;
+  --blue-dark: #2563EB;
+  --emerald: #16A34A;
+  --emerald-dark: #166534;
+  --red: #DC2626;
+  --red-dark: #991B1B;
+  --amber: #EAB308;
+  --amber-dark: #854D0E;
+  --success-subtle-light: #F0FDF4;
+  --success-border-light: #DCFCE7;
+  --error-subtle-light: #FEF2F2;
+  --error-border-light: #FECACA;
+  --warning-subtle-light: #FEFCE8;
+  --warning-border-light: #FEF08A;
+  --void: #06101A;
+  --panel: #121C26;
+  --panel-alt: #16222D;
+  --panel-raised: #1F2833;
+  --slate-700: #102232;
+  --slate-600: #18283A;
+  --slate-500: #273545;
+  --divider: #2B3540;
+  --mist: #6C7C89;
+  --fog: #949FA8;
+  --steel: #C8CED3;
+  --off-white: #F2F4F5;
+  --mint: #00FFA7;
+  --mint-hover: #09C385;
+  --mint-soft: #051F14;
+  --mint-border: #0E4A34;
+  --emerald-light: #34D399;
+  --red-light: #F87171;
+  --amber-light: #FBBF24;
+  --blue-light: #60A5FA;
+  --blue-lighter: #93C5FD;
+  --info-subtle-dark: #0E1A22;
+  --info-border-dark: #1E3A8A;
+  --success-subtle-dark: #0A1F14;
+  --success-border-dark: #14532D;
+  --error-subtle-dark: #1F1110;
+  --error-border-dark: #7F1D1D;
+  --warning-subtle-dark: #1F1906;
+  --warning-border-dark: #713F12;
+  --font-heading: 'Space Grotesk', system-ui, sans-serif;
+  --font-body: 'IBM Plex Sans', system-ui, sans-serif;
+  --font-mono: 'Geist Mono', ui-monospace, monospace;
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-6: 24px;
+  --sp-8: 32px;
+  --sp-12: 48px;
+  --sp-16: 64px;
+  --sp-24: 96px;
+  --r-2: 6px;
+  --r-3: 8px;
+  --r-4: 10px;
+  --r-full: 999px;
+  --pad-card-tight: var(--sp-4);
+  --pad-card-default: var(--sp-6);
+  --pad-card-lg: var(--sp-8);
+  --pad-x: clamp(20px, 5vw, 32px);
+  --w-sm: 640px;
+  --w-md: 768px;
+  --w-lg: 1024px;
+  --w-xl: 1100px;
+  --bp-sm: 640px;
+  --bp-md: 768px;
+  --bp-lg: 1024px;
+  --surface: var(--canvas-warm);
+  --surface-alt: #FFFFFF;
+  --surface-muted: var(--cream);
+  --border: var(--linen);
+  --fg: var(--charcoal);
+  --fg-2: var(--graphite);
+  --fg-muted: var(--stone);
+  --fg-disabled: var(--mid-stone);
+  --accent: var(--copper);
+  --accent-hover: var(--copper-dark);
+  --accent-solid: var(--copper-ink);
+  --accent-solid-hover: var(--copper-ink-dark);
+  --accent-soft: var(--copper-soft);
+  --accent-border: var(--copper-border);
+  --accent-focus: var(--copper-focus);
+  --accent-on: #FFFFFF;
+  --link: var(--blue-dark);
+  --link-hover: var(--blue);
+  --logo: var(--copper-dark);
+}
+
+body.theme-dark {
+  --surface: var(--void);
+  --surface-alt: var(--panel);
+  --surface-muted: var(--panel-alt);
+  --border: var(--divider);
+  --fg: var(--off-white);
+  --fg-2: var(--steel);
+  --fg-muted: var(--fog);
+  --fg-disabled: var(--mist);
+  --accent: var(--mint);
+  --accent-hover: var(--mint-hover);
+  --accent-solid: var(--mint);
+  --accent-solid-hover: var(--mint-hover);
+  --accent-soft: var(--mint-soft);
+  --accent-border: var(--mint-border);
+  --accent-focus: var(--mint);
+  --accent-on: var(--void);
+  --link: var(--blue-light);
+  --link-hover: var(--blue-lighter);
+  --logo: var(--mint);
+}

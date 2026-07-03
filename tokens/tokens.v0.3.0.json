@@ -1,0 +1,561 @@
+{
+  "$schema": "https://ds.42labs.io/tokens.schema.json",
+  "$metadata": {
+    "version": "0.3.0",
+    "commit": "da60739",
+    "extractedAt": "2026-06-27T20:54:11-03:00",
+    "source": "https://github.com/42piratas/42labs.ds/blob/da60739/src/app/globals.css",
+    "dtcgRevision": "editors-draft-2024",
+    "deprecationWindowDays": 90
+  },
+  "palette": {
+    "canvas-warm": {
+      "$value": "#FDFAF5",
+      "$type": "color"
+    },
+    "canvas-cool": {
+      "$value": "#FFFFFF",
+      "$type": "color"
+    },
+    "cream": {
+      "$value": "#FEF3E2",
+      "$type": "color"
+    },
+    "muted-cool": {
+      "$value": "#F5F5F4",
+      "$type": "color"
+    },
+    "linen": {
+      "$value": "#E8E3DD",
+      "$type": "color"
+    },
+    "border-cool": {
+      "$value": "#E7E5E4",
+      "$type": "color"
+    },
+    "mid-stone": {
+      "$value": "#B8AFA8",
+      "$type": "color"
+    },
+    "stone": {
+      "$value": "#756D68",
+      "$type": "color"
+    },
+    "graphite": {
+      "$value": "#433E3A",
+      "$type": "color"
+    },
+    "charcoal": {
+      "$value": "#1C1917",
+      "$type": "color"
+    },
+    "copper-soft": {
+      "$value": "#FDECD8",
+      "$type": "color"
+    },
+    "copper-border": {
+      "$value": "#F5C9A1",
+      "$type": "color"
+    },
+    "copper-focus": {
+      "$value": "#F59342",
+      "$type": "color"
+    },
+    "copper-light": {
+      "$value": "#E8853A",
+      "$type": "color"
+    },
+    "copper": {
+      "$value": "#E2711D",
+      "$type": "color"
+    },
+    "copper-dark": {
+      "$value": "#CC5D0A",
+      "$type": "color"
+    },
+    "copper-ink": {
+      "$value": "#B45309",
+      "$type": "color"
+    },
+    "copper-ink-dark": {
+      "$value": "#92400E",
+      "$type": "color"
+    },
+    "sky": {
+      "$value": "#EFF6FF",
+      "$type": "color"
+    },
+    "blue-border": {
+      "$value": "#BFDBFE",
+      "$type": "color"
+    },
+    "blue": {
+      "$value": "#3B82F6",
+      "$type": "color"
+    },
+    "blue-dark": {
+      "$value": "#2563EB",
+      "$type": "color"
+    },
+    "emerald": {
+      "$value": "#16A34A",
+      "$type": "color"
+    },
+    "emerald-dark": {
+      "$value": "#166534",
+      "$type": "color"
+    },
+    "red": {
+      "$value": "#DC2626",
+      "$type": "color"
+    },
+    "red-dark": {
+      "$value": "#991B1B",
+      "$type": "color"
+    },
+    "amber": {
+      "$value": "#EAB308",
+      "$type": "color"
+    },
+    "amber-dark": {
+      "$value": "#854D0E",
+      "$type": "color"
+    },
+    "success-subtle-light": {
+      "$value": "#F0FDF4",
+      "$type": "color"
+    },
+    "success-border-light": {
+      "$value": "#DCFCE7",
+      "$type": "color"
+    },
+    "error-subtle-light": {
+      "$value": "#FEF2F2",
+      "$type": "color"
+    },
+    "error-border-light": {
+      "$value": "#FECACA",
+      "$type": "color"
+    },
+    "warning-subtle-light": {
+      "$value": "#FEFCE8",
+      "$type": "color"
+    },
+    "warning-border-light": {
+      "$value": "#FEF08A",
+      "$type": "color"
+    },
+    "void": {
+      "$value": "#06101A",
+      "$type": "color"
+    },
+    "panel": {
+      "$value": "#121C26",
+      "$type": "color"
+    },
+    "panel-alt": {
+      "$value": "#16222D",
+      "$type": "color"
+    },
+    "panel-raised": {
+      "$value": "#1F2833",
+      "$type": "color"
+    },
+    "slate-700": {
+      "$value": "#102232",
+      "$type": "color"
+    },
+    "slate-600": {
+      "$value": "#18283A",
+      "$type": "color"
+    },
+    "slate-500": {
+      "$value": "#273545",
+      "$type": "color"
+    },
+    "divider": {
+      "$value": "#2B3540",
+      "$type": "color"
+    },
+    "mist": {
+      "$value": "#6C7C89",
+      "$type": "color"
+    },
+    "fog": {
+      "$value": "#949FA8",
+      "$type": "color"
+    },
+    "steel": {
+      "$value": "#C8CED3",
+      "$type": "color"
+    },
+    "off-white": {
+      "$value": "#F2F4F5",
+      "$type": "color"
+    },
+    "mint": {
+      "$value": "#00FFA7",
+      "$type": "color"
+    },
+    "mint-hover": {
+      "$value": "#09C385",
+      "$type": "color"
+    },
+    "mint-soft": {
+      "$value": "#051F14",
+      "$type": "color"
+    },
+    "mint-border": {
+      "$value": "#0E4A34",
+      "$type": "color"
+    },
+    "emerald-light": {
+      "$value": "#34D399",
+      "$type": "color"
+    },
+    "red-light": {
+      "$value": "#F87171",
+      "$type": "color"
+    },
+    "amber-light": {
+      "$value": "#FBBF24",
+      "$type": "color"
+    },
+    "blue-light": {
+      "$value": "#60A5FA",
+      "$type": "color"
+    },
+    "blue-lighter": {
+      "$value": "#93C5FD",
+      "$type": "color"
+    },
+    "info-subtle-dark": {
+      "$value": "#0E1A22",
+      "$type": "color"
+    },
+    "info-border-dark": {
+      "$value": "#1E3A8A",
+      "$type": "color"
+    },
+    "success-subtle-dark": {
+      "$value": "#0A1F14",
+      "$type": "color"
+    },
+    "success-border-dark": {
+      "$value": "#14532D",
+      "$type": "color"
+    },
+    "error-subtle-dark": {
+      "$value": "#1F1110",
+      "$type": "color"
+    },
+    "error-border-dark": {
+      "$value": "#7F1D1D",
+      "$type": "color"
+    },
+    "warning-subtle-dark": {
+      "$value": "#1F1906",
+      "$type": "color"
+    },
+    "warning-border-dark": {
+      "$value": "#713F12",
+      "$type": "color"
+    }
+  },
+  "color": {
+    "surface": {
+      "$value": "{palette.canvas-warm}",
+      "$type": "color",
+      "$extensions": {
+        "42labs.modes": {
+          "dark": "{palette.void}"
+        }
+      }
+    },
+    "surface-alt": {
+      "$value": "#FFFFFF",
+      "$type": "color",
+      "$extensions": {
+        "42labs.modes": {
+          "dark": "{palette.panel}"
+        }
+      }
+    },
+    "surface-muted": {
+      "$value": "{palette.cream}",
+      "$type": "color",
+      "$extensions": {
+        "42labs.modes": {
+          "dark": "{palette.panel-alt}"
+        }
+      }
+    },
+    "border": {
+      "$value": "{palette.linen}",
+      "$type": "color",
+      "$extensions": {
+        "42labs.modes": {
+          "dark": "{palette.divider}"
+        }
+      }
+    },
+    "fg": {
+      "$value": "{palette.charcoal}",
+      "$type": "color",
+      "$extensions": {
+        "42labs.modes": {
+          "dark": "{palette.off-white}"
+        }
+      }
+    },
+    "fg-2": {
+      "$value": "{palette.graphite}",
+      "$type": "color",
+      "$extensions": {
+        "42labs.modes": {
+          "dark": "{palette.steel}"
+        }
+      }
+    },
+    "fg-muted": {
+      "$value": "{palette.stone}",
+      "$type": "color",
+      "$extensions": {
+        "42labs.modes": {
+          "dark": "{palette.fog}"
+        }
+      }
+    },
+    "fg-disabled": {
+      "$value": "{palette.mid-stone}",
+      "$type": "color",
+      "$extensions": {
+        "42labs.modes": {
+          "dark": "{palette.mist}"
+        }
+      }
+    },
+    "accent": {
+      "$value": "{palette.copper}",
+      "$type": "color",
+      "$extensions": {
+        "42labs.modes": {
+          "dark": "{palette.mint}"
+        }
+      }
+    },
+    "accent-hover": {
+      "$value": "{palette.copper-dark}",
+      "$type": "color",
+      "$extensions": {
+        "42labs.modes": {
+          "dark": "{palette.mint-hover}"
+        }
+      }
+    },
+    "accent-solid": {
+      "$value": "{palette.copper-ink}",
+      "$type": "color",
+      "$extensions": {
+        "42labs.modes": {
+          "dark": "{palette.mint}"
+        }
+      }
+    },
+    "accent-solid-hover": {
+      "$value": "{palette.copper-ink-dark}",
+      "$type": "color",
+      "$extensions": {
+        "42labs.modes": {
+          "dark": "{palette.mint-hover}"
+        }
+      }
+    },
+    "accent-soft": {
+      "$value": "{palette.copper-soft}",
+      "$type": "color",
+      "$extensions": {
+        "42labs.modes": {
+          "dark": "{palette.mint-soft}"
+        }
+      }
+    },
+    "accent-border": {
+      "$value": "{palette.copper-border}",
+      "$type": "color",
+      "$extensions": {
+        "42labs.modes": {
+          "dark": "{palette.mint-border}"
+        }
+      }
+    },
+    "accent-focus": {
+      "$value": "{palette.copper-focus}",
+      "$type": "color",
+      "$extensions": {
+        "42labs.modes": {
+          "dark": "{palette.mint}"
+        }
+      }
+    },
+    "accent-on": {
+      "$value": "#FFFFFF",
+      "$type": "color",
+      "$extensions": {
+        "42labs.modes": {
+          "dark": "{palette.void}"
+        }
+      }
+    },
+    "link": {
+      "$value": "{palette.blue-dark}",
+      "$type": "color",
+      "$extensions": {
+        "42labs.modes": {
+          "dark": "{palette.blue-light}"
+        }
+      }
+    },
+    "link-hover": {
+      "$value": "{palette.blue}",
+      "$type": "color",
+      "$extensions": {
+        "42labs.modes": {
+          "dark": "{palette.blue-lighter}"
+        }
+      }
+    },
+    "logo": {
+      "$value": "{palette.copper-dark}",
+      "$type": "color",
+      "$extensions": {
+        "42labs.modes": {
+          "dark": "{palette.mint}"
+        }
+      }
+    }
+  },
+  "spacing": {
+    "sp-1": {
+      "$value": "4px",
+      "$type": "dimension"
+    },
+    "sp-2": {
+      "$value": "8px",
+      "$type": "dimension"
+    },
+    "sp-3": {
+      "$value": "12px",
+      "$type": "dimension"
+    },
+    "sp-4": {
+      "$value": "16px",
+      "$type": "dimension"
+    },
+    "sp-6": {
+      "$value": "24px",
+      "$type": "dimension"
+    },
+    "sp-8": {
+      "$value": "32px",
+      "$type": "dimension"
+    },
+    "sp-12": {
+      "$value": "48px",
+      "$type": "dimension"
+    },
+    "sp-16": {
+      "$value": "64px",
+      "$type": "dimension"
+    },
+    "sp-24": {
+      "$value": "96px",
+      "$type": "dimension"
+    }
+  },
+  "radius": {
+    "r-2": {
+      "$value": "6px",
+      "$type": "dimension"
+    },
+    "r-3": {
+      "$value": "8px",
+      "$type": "dimension"
+    },
+    "r-4": {
+      "$value": "10px",
+      "$type": "dimension"
+    },
+    "r-full": {
+      "$value": "999px",
+      "$type": "dimension"
+    }
+  },
+  "size": {
+    "w-sm": {
+      "$value": "640px",
+      "$type": "dimension"
+    },
+    "w-md": {
+      "$value": "768px",
+      "$type": "dimension"
+    },
+    "w-lg": {
+      "$value": "1024px",
+      "$type": "dimension"
+    },
+    "w-xl": {
+      "$value": "1100px",
+      "$type": "dimension"
+    }
+  },
+  "breakpoint": {
+    "bp-sm": {
+      "$value": "640px",
+      "$type": "dimension"
+    },
+    "bp-md": {
+      "$value": "768px",
+      "$type": "dimension"
+    },
+    "bp-lg": {
+      "$value": "1024px",
+      "$type": "dimension"
+    }
+  },
+  "padding": {
+    "pad-card-tight": {
+      "$value": "{spacing.sp-4}",
+      "$type": "dimension"
+    },
+    "pad-card-default": {
+      "$value": "{spacing.sp-6}",
+      "$type": "dimension"
+    },
+    "pad-card-lg": {
+      "$value": "{spacing.sp-8}",
+      "$type": "dimension"
+    },
+    "pad-x": {
+      "$value": "clamp(20px, 5vw, 32px)",
+      "$type": "dimension"
+    }
+  },
+  "typography": {
+    "font-heading": {
+      "$value": "'Space Grotesk', system-ui, sans-serif",
+      "$type": "fontFamily"
+    },
+    "font-body": {
+      "$value": "'IBM Plex Sans', system-ui, sans-serif",
+      "$type": "fontFamily"
+    },
+    "font-mono": {
+      "$value": "'Geist Mono', ui-monospace, monospace",
+      "$type": "fontFamily"
+    }
+  },
+  "$extensions": {
+    "42labs.brands": "RESERVED — future use; case-study overlays land here under B??-brand-themes-export."
+  }
+}
