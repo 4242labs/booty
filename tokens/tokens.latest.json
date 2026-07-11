@@ -2,9 +2,9 @@
   "$schema": "https://ds.42labs.io/tokens.schema.json",
   "$metadata": {
     "version": "0.3.1",
-    "commit": "e46bf35",
-    "extractedAt": "2026-07-09T18:11:01-03:00",
-    "source": "https://github.com/4242labs/design-system/blob/e46bf35/src/app/globals.css",
+    "commit": "a5f3c34",
+    "extractedAt": "2026-07-10T19:50:37-03:00",
+    "source": "https://github.com/4242labs/design-system/blob/a5f3c34/src/app/globals.css",
     "dtcgRevision": "editors-draft-2024",
     "deprecationWindowDays": 90
   },
