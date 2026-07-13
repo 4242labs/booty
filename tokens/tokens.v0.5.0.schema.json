@@ -1,0 +1,295 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ds.42labs.io/tokens.schema.json",
+  "title": "42labs DS tokens",
+  "description": "W3C-DTCG token document emitted by scripts/extract-tokens.mjs.",
+  "type": "object",
+  "required": [
+    "$metadata",
+    "palette",
+    "color"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "$metadata": {
+      "type": "object",
+      "required": [
+        "version",
+        "commit",
+        "extractedAt",
+        "source",
+        "dtcgRevision"
+      ],
+      "properties": {
+        "version": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$"
+        },
+        "commit": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{7,40}$"
+        },
+        "extractedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "source": {
+          "type": "string",
+          "format": "uri"
+        },
+        "dtcgRevision": {
+          "type": "string"
+        },
+        "deprecationWindowDays": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "palette": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "$value"
+        ],
+        "properties": {
+          "$value": {
+            "type": "string",
+            "minLength": 1
+          },
+          "$type": {
+            "type": "string",
+            "enum": [
+              "color",
+              "dimension",
+              "fontFamily",
+              "duration",
+              "shadow",
+              "gradient"
+            ]
+          },
+          "$extensions": {
+            "type": "object"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "color": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "$value"
+        ],
+        "properties": {
+          "$value": {
+            "type": "string",
+            "minLength": 1
+          },
+          "$type": {
+            "type": "string",
+            "enum": [
+              "color",
+              "dimension",
+              "fontFamily",
+              "duration",
+              "shadow",
+              "gradient"
+            ]
+          },
+          "$extensions": {
+            "type": "object"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "spacing": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "$value"
+        ],
+        "properties": {
+          "$value": {
+            "type": "string",
+            "minLength": 1
+          },
+          "$type": {
+            "type": "string",
+            "enum": [
+              "color",
+              "dimension",
+              "fontFamily",
+              "duration",
+              "shadow",
+              "gradient"
+            ]
+          },
+          "$extensions": {
+            "type": "object"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "radius": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "$value"
+        ],
+        "properties": {
+          "$value": {
+            "type": "string",
+            "minLength": 1
+          },
+          "$type": {
+            "type": "string",
+            "enum": [
+              "color",
+              "dimension",
+              "fontFamily",
+              "duration",
+              "shadow",
+              "gradient"
+            ]
+          },
+          "$extensions": {
+            "type": "object"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "size": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "$value"
+        ],
+        "properties": {
+          "$value": {
+            "type": "string",
+            "minLength": 1
+          },
+          "$type": {
+            "type": "string",
+            "enum": [
+              "color",
+              "dimension",
+              "fontFamily",
+              "duration",
+              "shadow",
+              "gradient"
+            ]
+          },
+          "$extensions": {
+            "type": "object"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "breakpoint": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "$value"
+        ],
+        "properties": {
+          "$value": {
+            "type": "string",
+            "minLength": 1
+          },
+          "$type": {
+            "type": "string",
+            "enum": [
+              "color",
+              "dimension",
+              "fontFamily",
+              "duration",
+              "shadow",
+              "gradient"
+            ]
+          },
+          "$extensions": {
+            "type": "object"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "padding": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "$value"
+        ],
+        "properties": {
+          "$value": {
+            "type": "string",
+            "minLength": 1
+          },
+          "$type": {
+            "type": "string",
+            "enum": [
+              "color",
+              "dimension",
+              "fontFamily",
+              "duration",
+              "shadow",
+              "gradient"
+            ]
+          },
+          "$extensions": {
+            "type": "object"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "typography": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "$value"
+        ],
+        "properties": {
+          "$value": {
+            "type": "string",
+            "minLength": 1
+          },
+          "$type": {
+            "type": "string",
+            "enum": [
+              "color",
+              "dimension",
+              "fontFamily",
+              "duration",
+              "shadow",
+              "gradient"
+            ]
+          },
+          "$extensions": {
+            "type": "object"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "$extensions": {
+      "type": "object"
+    }
+  }
+}
