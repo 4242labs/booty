@@ -1,5 +1,8 @@
 # booty
 
+[![Project Status: Active](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+[![Maintenance](https://img.shields.io/badge/maintenance-passively--maintained-yellowgreen.svg)](https://github.com/4242labs/design-system)
+
 Grab-and-go artifacts from the 42labs Design System. Single source of truth — everything here is what `ds.42labs.io` serves. Function over fuss.
 
 ## What's inside
@@ -23,3 +26,12 @@ Zed: drop `themes/zed/42labs.json` into `~/.config/zed/themes/`.
 
 Linear: copy a string from `themes/linear/42labs-linear.md` → Settings → Preferences → Theme → Custom.
 
+## Contributing
+
+**Status: passively maintained.** Everything in this repo is **generated** — a daily
+workflow mirrors it from the 42labs Design System. A pull request here would be
+overwritten by the next sync, so nothing lands in `booty` directly.
+
+Open issues and pull requests upstream instead, at
+[4242labs/design-system](https://github.com/4242labs/design-system). Expect a reply in
+weeks rather than days — this is not a staffed product.
