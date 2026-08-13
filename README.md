@@ -1,7 +1,7 @@
 # booty
 
 [![Project Status: Active](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
-[![Maintenance](https://img.shields.io/badge/maintenance-passively--maintained-yellowgreen.svg)](https://github.com/4242labs/design-system)
+[![Maintenance](https://img.shields.io/badge/maintenance-passively--maintained-yellowgreen.svg)](CONTRIBUTING.md)
 
 Grab-and-go artifacts from the 42labs Design System. Single source of truth — everything here is what `ds.42labs.io` serves. Function over fuss.
 
@@ -28,10 +28,19 @@ Linear: copy a string from `themes/linear/42labs-linear.md` → Settings → Pre
 
 ## Contributing
 
-**Status: passively maintained.** Everything in this repo is **generated** — a daily
-workflow mirrors it from the 42labs Design System. A pull request here would be
-overwritten by the next sync, so nothing lands in `booty` directly.
+**Passively maintained, and closed to pull requests.** Everything here is **generated** — a
+daily workflow mirrors it from the 42labs Design System, so a patch would be overwritten by
+the next sync. Issues are open and are what actually get things fixed:
+[open one](https://github.com/4242labs/booty/issues/new), or write to <ahoy@42labs.io>. Expect
+a reply in weeks rather than days — this is not a staffed product. Details in
+[CONTRIBUTING.md](CONTRIBUTING.md).
 
-Open issues and pull requests upstream instead, at
-[4242labs/design-system](https://github.com/4242labs/design-system). Expect a reply in
-weeks rather than days — this is not a staffed product.
+## License
+
+[CC BY 4.0](LICENSE) — use the tokens and themes anywhere, commercial work included, and
+credit 42labs. Not the fleet's usual AGPL-3.0: these are assets meant to be embedded, and
+copyleft would make every use this README recommends a violation. See
+[LICENSING.md](LICENSING.md).
+
+---
+If it earned its keep, [coffee is appreciated](https://buymeacoffee.com/42piratas). ☕
